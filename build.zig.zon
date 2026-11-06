@@ -1,0 +1,27 @@
+.{
+    .name = .z2d_badge_demo,
+    .version = "0.0.1",
+    .dependencies = .{
+        .z2d = .{
+            .url = "https://github.com/vancluever/z2d/archive/f7a74c779f88d0fcc47ebc737365ad8c60dcb0b6.tar.gz",
+            .hash = "z2d-0.13.3-pre-j5P_HgwoFAAFbuUgppzRiaiNX5K37dZNd8cWMpVdT9i-",
+        },
+        .sycl_badge = .{
+            .url = "https://github.com/ZigEmbeddedGroup/sycl-badge/archive/ed99e2e961805308293800015f65bcfb1ce8dcbc.tar.gz",
+            .hash = "sycl_badge-0.0.0-ElSGjIatGwCrtXd66PBZh_JjbpsQyaTowSIFKySeGE4C",
+        },
+        .microzig = .{
+            .url = "https://github.com/ZigEmbeddedGroup/microzig/releases/download/0.17.32/microzig.tar.gz",
+            .hash = "microzig-0.17.32-D20YSVDIAAD13iTDiLi-4i9lze4hZvhNDTDOiVtN54mR",
+        },
+    },
+    .minimum_zig_version = "0.17.0",
+    .paths = .{
+        "LICENSE",
+        "README.md",
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+    .fingerprint = 0xdf126d27c414554c,
+}
