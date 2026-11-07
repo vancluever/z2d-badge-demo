@@ -231,7 +231,6 @@ const Demo = union(DemoType) {
             text.text_extents.y_bearing;
 
         path: z2d.Path,
-        next_idx: usize = 0,
         progress: Progress = .{ .max_us = max_s * 1_000_000 },
 
         fn init(alloc: std.mem.Allocator) !Crawl {
