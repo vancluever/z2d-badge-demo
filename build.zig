@@ -27,7 +27,7 @@ const MicroBuild = microzig.MicroBuild(.{
 
 pub fn build(b: *std.Build) void {
     // Our default optimize mode is ReleaseSmall.
-    const optimize = b.standardOptimizeOption(.{ .preferred_optimize_mode = .small });
+    const optimize: std.builtin.OptimizeMode = .ReleaseSmall;
     // Badge dependency (for various badge OS/kernel/API files)
     const badge_dep = b.dependency("sycl_badge", .{});
     // z2d needs the optimize option passed in that we have above to ensure
