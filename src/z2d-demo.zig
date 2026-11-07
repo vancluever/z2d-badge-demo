@@ -1,8 +1,5 @@
-//! @author_name     Chris Marchesi
-//! @author_handle   vancluever
-//! @cart_title      z2d-demo
-//! @description     Realtime rendering demo for the SYCL v2 badge
-
+// SPDX-License-Identifier: MPL-2.0
+//   Copyright © 2026 Chris Marchesi
 const std = @import("std");
 const cart = @import("cart-api");
 const microzig = @import("microzig");

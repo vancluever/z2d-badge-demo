@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: MPL-2.0
+//   Copyright © 2026 Chris Marchesi
+
 //! This is the build file for the z2d demo cart for the SYCL Badge v2, the
 //! electronic badge given out at the Vancouver SYCL 2026 Conference's tables
 //! day. The repository for the badge OS and other carts can be found at:
