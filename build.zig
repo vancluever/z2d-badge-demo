@@ -110,6 +110,7 @@ pub fn build(b: *std.Build) void {
     install_uf2.dir = .{ .custom = "carts" };
     install_elf.dir = .{ .custom = "carts/debug" };
     b.getInstallStep().dependOn(&install_uf2.step);
+    b.getInstallStep().dependOn(&install_elf.step);
 }
 
 /// Patches the sycl-badge cart linker script to add symbols needed by MicroZig
