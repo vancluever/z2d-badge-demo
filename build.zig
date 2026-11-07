@@ -100,17 +100,15 @@ pub fn build(b: *std.Build) void {
     const board_mod = cart_firmware.core_mod.import_table.get("board") orelse unreachable;
     cart_api_module.addImport("board", board_mod);
 
-    // Firmware install step. We use the same directory as is expected in the
+    // Firmware install step. We use the same directories as is expected in the
     // badge repository for carts.
-    //
-    // Note that no debug cart is installed for now, but it can be added here
-    // fairly easily by adding the elf file as it exists in the badge
-    // repository (in the "add_cart" function as well).
     const install_uf2 = mb.add_install_firmware(
         cart_firmware,
         .{ .format = .{ .uf2 = .{ .family_id = .RP2350_ARM_S } } },
     );
+    const install_elf = mb.add_install_firmware(cart_firmware, .{ .format = .elf });
     install_uf2.dir = .{ .custom = "carts" };
+    install_elf.dir = .{ .custom = "carts/debug" };
     b.getInstallStep().dependOn(&install_uf2.step);
 }
 
