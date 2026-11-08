@@ -32,7 +32,11 @@ pub fn build(b: *std.Build) void {
     const badge_dep = b.dependency("sycl_badge", .{});
     // z2d needs the optimize option passed in that we have above to ensure
     // that it gets set properly, otherwise it will likely default to Debug.
-    const z2d_dep = b.dependency("z2d", .{ .optimize = optimize, .float_precision = .single });
+    const z2d_dep = b.dependency("z2d", .{
+        .optimize = optimize,
+        .float_precision = .single,
+        .vector_length = 4,
+    });
 
     // Load in MicroBuild. Targets are lazily loaded, so we need to account for
     // that.
