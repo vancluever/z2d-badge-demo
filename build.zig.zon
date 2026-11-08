@@ -5,8 +5,8 @@
     .version = "0.0.1",
     .dependencies = .{
         .z2d = .{
-            .url = "https://github.com/vancluever/z2d/archive/f7a74c779f88d0fcc47ebc737365ad8c60dcb0b6.tar.gz",
-            .hash = "z2d-0.13.3-pre-j5P_HgwoFAAFbuUgppzRiaiNX5K37dZNd8cWMpVdT9i-",
+            .url = "https://github.com/vancluever/z2d/archive/e5be7af44ca957173759506726c5794b7cc180d4.tar.gz",
+            .hash = "z2d-0.14.0-j5P_Hl9EFADgBruemiQXUyIW9jvWuKxJOYl3nwpvcvez",
         },
         .sycl_badge = .{
             .url = "https://github.com/ZigEmbeddedGroup/sycl-badge/archive/ed99e2e961805308293800015f65bcfb1ce8dcbc.tar.gz",

@@ -35,7 +35,7 @@ pub fn build(b: *std.Build) void {
     const z2d_dep = b.dependency("z2d", .{
         .optimize = optimize,
         .float_precision = .single,
-        .vector_length = 4,
+        .simd = false,
     });
 
     // Load in MicroBuild. Targets are lazily loaded, so we need to account for
