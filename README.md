@@ -17,6 +17,7 @@ number of updates to z2d, which are utilized here:
 * Path serialization
 * Configurable float precision
 * RGB565 pixel types
+* Options to disable vectorized code (avoids `@Vector` unrolling!)
 
 Note that some of these features are utilized *indirectly* by this project, to
 help keep the size of the cart image down. Namely, we use a companion tool,
